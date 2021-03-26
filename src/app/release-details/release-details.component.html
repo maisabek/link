@@ -1,0 +1,56 @@
+<div class="breadcrumbs">
+<div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+              <li class="breadcrumb-item active">{{newsDetails.title}}</li>
+            </ol>
+          </nav>
+</div></div>
+<div class="container">
+    <div class="row">
+        <h5 class="col-md-12 mb-5 mt-5">PRESS RELEASE</h5>
+        <div class="col-md-6">
+            <img  class="img-fluid" [src]="newsDetails.urlToImage">
+        </div>
+        <div class="col-md-6 py-5">
+            <h5>{{newsDetails.title}}</h5>
+            <p>{{newsDetails.description}}</p>
+        </div>
+        <div class="col-md-12 mt-5">
+            <p>{{newsDetails.content}}</p>
+        </div>
+    </div>
+</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5 mb-5">
+                    <h5>ATTACHMENTS</h5>
+                </div>
+            <div class="col-md-4 mt-2 p-3 bg-light" *ngFor="let i of ATTACHMENTS">
+              <div class="ATTACHMENTS">
+                <div class="row">
+                <div class="col-md-10 col-10">
+                <p>Al Jalia foundation.PDF</p>
+                 </div>
+                <div class="col-md-2 col-2 col-sm-2 bg-success">
+                    <img src="assets/images/icons/download.svg">
+                </div></div>
+            </div></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+        <div class="col-md-12 mt-5 mb-5">
+           <h5>YOU MAY ALSO BE INTERESTED IN</h5>
+        </div>
+        <div class="col-md-4 mt-4 position-relative" *ngFor="let i of interested">
+           <div class="interested">
+            <img [src]="i.photo" class="h-100 w-100">
+            <div class="overlay">
+                   <h4 class="mt-4">{{i.title}}</h4>
+                   <p>{{i.description}}</p>
+            </div>
+        </div>
+    </div></div></div>
+

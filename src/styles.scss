@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+.slider-arrow{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  .slider-arrow.left{left: 0;}
+  .slider-arrow.right{right: 0;}
+  .owl-theme .owl-nav [class*=owl-]{
+      background-color:transparent;
+  }
+  .owl-theme .owl-nav [class*=owl-]:hover{
+    background-color:transparent;
+
+      }
+html{
+    scroll-behavior: smooth;
+}

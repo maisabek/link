@@ -1,0 +1,61 @@
+.breadcrumbs{
+    border-bottom: 2px solid rgb(216, 216, 216);
+}
+.breadcrumb {
+    background-color: white !important;
+    margin-bottom: 0rem !important;
+}
+h5{color:#4990b1;}
+
+.attachment{transition:all .5s ease-in-out}
+.attachment:hover{
+    background-color:rgb(99, 230, 99) !important;
+}
+.attachment:hover .icon{ 
+background-color: white !important;
+color:black !important;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 135, 149, 0.6);
+    top: 8%;
+    left: 15%;
+    width: 74%;
+    height: 85%;
+    color:white;
+    transition: all .5s ease-in-out;
+    h4,p{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+.interested{
+    overflow:hidden;
+    height: 209px;
+}
+.interested img{
+    transition: all .5s ease-in-out;
+}
+.interested:hover img{
+transform:scale(1.7)
+}
+// .ATTACHMENTS:hover{background-color: rgb(99, 230, 99);color:white}
+// .interested:hover .overlay{
+//     font-size:12px;
+//     background-color: #4990b1;
+// }
+@media (max-width: 767px ){/* mobile & tablet*/
+  
+    .attachment{
+        width: 69% !important;
+    }
+}
+@media (min-width: 768px) and (max-width:991px){ /* small screen */ 
+  
+          
+
+}
+@media (min-width: 992px) and (max-width:1199px) { /* medium screen */
+
+
+}

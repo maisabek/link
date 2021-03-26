@@ -1,0 +1,102 @@
+// @import 'variables';
+.navbar{padding:0 !important;background-color: white;}
+// .container{margin-left: 10%;}
+.logo{float:left;width: 40%;}
+.icons{float: right;width: 40%;}
+.clearfix{clear: both}
+.displayedList > li,.icons ul li{list-style-type: none;float: left;padding: 0 8px;color:rgb(73, 144, 177)}
+.nav2{background-color: rgb(214, 214, 214);padding: 17px 0px;width: 100%;}
+.icons1{
+    width: 85%;float: left;
+    ul li{font-size:20px}
+    ul li a{cursor: pointer;}
+}
+.hiddenlist li{list-style-type: none;margin-top: 2%;margin-right: 4%;cursor: pointer;}
+.icons2{width: 10%;float: right;}
+.hiddenlist{position: absolute;z-index: 2;background-color: rgb(221, 219, 219);padding: 20px;display: none;transition: all .2s;}
+.displayedList > li:hover .hiddenlist{
+display: block;
+}
+.pos{
+    position:sticky;
+    top:0;
+    background-color: white;
+    width:100%;
+    border:1px solid white;
+    z-index:66666;
+}
+.hidden{
+    ul li{
+        float:none;
+        list-style-type: none;
+    }
+    .List{
+    background-color: #c7c7c7;
+    width: 66%;
+    margin-left: 4%;
+    margin-top: 1%;
+    padding: 20px;
+    z-index: 6666;
+    position: absolute;
+    color:rgb(73, 144, 177);
+    }
+    // .list-icon{
+    //     display:none;
+    // }
+
+  
+}
+.fa-bars{
+    cursor:pointer;position:absolute;
+    // margin-top: -1%;
+    // margin-left: 16%;
+    display:none;
+}
+// .List > li:hover .hiddenlist{
+//     display: block;
+//     }
+// .fa-bars:hover .list-icon{
+//     display:block !important;
+// }
+a{
+    text-decoration:none !important;
+    color:rgb(73, 144, 177) !important;
+}
+// .toggle{display:none}
+
+@media (max-width: 767px ){/* mobile & tablet*/
+    // .icons1{
+    //     .displayedList{
+    //         display:none;  
+
+    //     }
+    //      li{
+    //         float:none;  
+    //     }
+    // }
+
+    .first-icon{
+        width: 100%;
+    }
+    .fa-bars{
+        display: block !important;
+        }
+     
+        .icons{
+            margin-right: 2%;
+            width: 48%;
+        }        
+
+}
+@media (min-width: 768px) and (max-width:991px){ /* small screen */ 
+    .icons1 {
+        width: 122%;
+        margin-left: -21%;
+       }
+          
+
+}
+@media (min-width: 992px) and (max-width:1199px) { /* medium screen */
+
+
+}

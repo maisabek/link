@@ -1,0 +1,109 @@
+.footer{
+    background-color: rgb(214, 214, 214);
+    margin-top: 5%;
+    padding: 10px;
+    color:gray;
+    ul li{
+        list-style-type: none;
+        margin-top:4%;
+        cursor: pointer;
+    }
+    h3{
+        margin-left: 17%;
+        margin-top: 14%;
+        font-size: 18px;
+    }
+
+.input-field{float: left;    width: 20%;}
+.Subscribe-btn{float: right;width: 20%;}
+input{
+    outline:none;
+    border:none;
+    background-color:white;
+    padding: 15px;
+    margin-left: 20%;
+}
+button{
+    padding: 15px;
+color:white;
+outline:none;
+    border:none;
+    background-color: rgb(73, 144, 177);
+    
+}
+.one1{    
+    float: left;
+    width: 18%;
+}
+}
+.clearfix{clear: both}
+.footer2{
+    background-color: rgb(73, 144, 177);
+    color: white;
+    padding: 9px;
+    font-size: 17px;
+    .privacy-icons{float: left;width: 55%;}
+    .Copyright-p{float: right;width:33%}
+    ul li{list-style-type: none;float: left;padding: 0 1%;cursor: pointer;}
+}
+@media (max-width: 767px ){/* mobile & tablet*/
+    .footer{
+     .one1{
+        width: 68%;
+        margin-left: -12%;
+        h3{
+            margin-left: 14% !important;
+           }
+    }
+    button{
+        margin-left: -26%;
+    }
+}
+.footer2{
+    .privacy-icons{
+        width: 100%;
+        margin-left: -12%;
+    }
+    .Copyright-p{
+        width: 99%;
+        margin-top: 5%;
+    }
+}
+
+}
+@media (min-width: 768px) and (max-width:991px){ /* small screen */ 
+    .footer{
+        .one1{
+            width: 51%;
+            margin-left: -10%;
+            h3{
+                margin-left: 10% !important;
+               }
+       }
+       button{
+           margin-left: -44%;
+            margin-top: 0%;
+       }
+   
+        .input-field {
+        width:0px;
+       }
+   }
+  
+   .footer2{
+       .privacy-icons{
+           width: 80%;
+           margin-left: -7%;
+       }
+       .Copyright-p{
+           width: 99%;
+           margin-top: 5%;
+       }
+   }
+
+
+}
+@media (min-width: 992px) and (max-width:1199px) { /* medium screen */
+
+
+}

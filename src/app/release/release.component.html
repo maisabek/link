@@ -1,0 +1,60 @@
+<div class="breadcrumbs">
+  <div class="container">
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+                <li class="breadcrumb-item active">press release</li>
+              </ol>
+            </nav>
+  </div></div>
+
+ <div class="search">
+   <div class="container">
+     <div class="row">
+        <div class="col-md-12">
+            <h3>PRESS RELEASE
+            </h3>
+        </div>
+        <div class="col-md-4">
+          <select (change)="updateFilterNews()" name="category" [(ngModel)]="category">
+            <option selected disabled>Category</option>
+            <option *ngFor="let items of categories; let i =index" [value]="items.id">{{items.name}}</option>
+          </select>
+        </div>
+        <div class="col-md-8">
+          <input type="text" placeholder="Title" (keyup)="updateFilterNews()" [(ngModel)]="title">
+          <img src="assets/images/icons/Search.svg">
+        </div>
+     </div>
+   </div>
+  </div>
+  <!-- start latest -->
+<div class="latest">
+    <div class="latest-para">
+  </div>
+  <div class="container">
+  <div class="row">
+    <div *ngFor="let news of filterNews; let i = index" class="news col-md-3">
+      <div class="news-card">
+        <a routerLink='/release' class="text-light">
+        <img [src]="news.urlToImage">
+         <div class="news-desc">
+          <h2 class="">14</h2>
+          <h4 class="">September</h4>
+          <p class="">Monday 2020</p>
+          <p class="">
+            {{news.title}}
+          </p>
+          <a [routerLink]="['/releaseDetails',i]"><button>Read More</button></a>
+         </div>
+         </a>
+      </div>
+    </div>
+   
+  </div>
+  <div class="col-md-12 mt-5">
+    <button class="btn-load" (click)="LoadMore()">Load More</button>
+  </div>
+  
+  </div>
+  </div>
